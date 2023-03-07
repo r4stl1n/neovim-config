@@ -28,6 +28,9 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
 --vim.opt.colorcolumn = "80"
 -- Disable virtual_text since it's redundant due to lsp_lines.
 vim.diagnostic.config({
