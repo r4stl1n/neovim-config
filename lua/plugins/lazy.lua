@@ -25,7 +25,8 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-    {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+    { 'nvim-treesitter/nvim-treesitter', build = ":TSUpdate"},
+    { 'rhaiscript/vim-rhai', lazy = false },
     {
       'sainnhe/sonokai',
       lazy = false,
@@ -82,8 +83,8 @@ require("lazy").setup({
     end
   },
 
-    {
-      "folke/which-key.nvim",
+  {
+    "folke/which-key.nvim",
       event = "VeryLazy",
       opts = {
         -- your configuration comes here
@@ -101,6 +102,7 @@ require("lazy").setup({
       },
     }
   },
+
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "habamax" } },
