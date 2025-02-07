@@ -45,12 +45,19 @@ require("lazy").setup({
       dependencies = {
         -- Automatically install LSPs to stdpath for neovim
         'williamboman/mason.nvim',
-        'williamboman/mason-lspconfig.nvim',
-        -- Useful status updates for LSP
-        'j-hui/fidget.nvim',
+        'williamboman/mason-lspconfig.nvim',  
+      -- Useful status updates for LSP
+       'j-hui/fidget.nvim',
+     }
+  },
+  {
+      'smoka7/hop.nvim',
+      lazy = false,
+      version = "*",
+      opts = {
+          keys = 'etovxqpdygfblzhckisuran'
       }
-   },
-
+  },
 
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
